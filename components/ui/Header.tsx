@@ -29,4 +29,5 @@ const Header = () => {
 };
 
 export default Header;
+//creo que primero es este 1
 //que es py-5? es un padding en el eje y de 5 unidades, lo que significa que hay un espacio de 5 unidades entre el contenido del header y su borde superior e inferior.

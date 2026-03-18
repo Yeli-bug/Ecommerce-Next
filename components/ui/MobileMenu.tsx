@@ -21,3 +21,6 @@ const MobileMenu = () => {
 }
 
 export default MobileMenu;
+//creo que este es el 2 tambien
+//qu es y hace onClick={() => setIsSidebarOpen(!isSidebarOpen) ?
+//onClick es un evento que se dispara cuando el usuario hace clic en el botón. En este caso, se utiliza para alternar el estado de isSidebarOpen entre true y false. Cuando el usuario hace clic en el botón, se llama a la función setIsSidebarOpen con el valor opuesto al estado actual, lo que permite abrir o cerrar el menú lateral (SideMenu) dependiendo de su estado actual.

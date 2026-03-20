@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/ui/Header";
-import Footer from "@/components/ui/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { ClerkProvider } from '@clerk/nextjs'
 
 
@@ -19,9 +19,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <Header />
-          {children}
-          <Footer />
+          <div>
+            <Header/>
+            <main className="min-h-screen">{children}</main>
+            <Footer/>
+          </div>
         </body>
       </html>
     </ClerkProvider>

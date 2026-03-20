@@ -1,7 +1,7 @@
 import { Facebook, Instagram, Youtube } from "lucide-react";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./tooltip";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 
 interface Props {
     className?: string;

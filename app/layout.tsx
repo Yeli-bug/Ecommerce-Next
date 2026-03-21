@@ -19,9 +19,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <div>
+          <div className="flex flex-col min-h-screen">
             <Header/>
-            <main className="min-h-screen">{children}</main>
+            <main className="flex-1">
+              {children}
+            </main>
             <Footer/>
           </div>
         </body>
@@ -29,3 +31,13 @@ export default function RootLayout({
     </ClerkProvider>
   );
 }
+
+//explicame que es y para que sirve:
+//RootLayout: es el layout principal de toda tu aplicación.
+//children: Es todo lo que se renderiza dentro del layout.
+//React.ReactNode: Es un tipo de dato en React. 
+
+//explicame los estilos: flex flex-col min-h-screen
+//display: flex; Activa Flexbox. Permite controlar layout (alineación, distribución, etc.)
+//flex-direction: column. Los elementos se acomodan verticalmente.
+//min-height: 100vh. Altura mínima = toda la pantalla

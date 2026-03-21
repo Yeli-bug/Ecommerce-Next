@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Logo = ({className}: {className?: string}) => {
   return (
-    <Link href={"/"}>
+    <Link href={"/"} className="inline-flex">
         <h2
         className={cn("text-2xl font-bold", 
             className
